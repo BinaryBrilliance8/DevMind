@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevMind — {{ summary.run_id }}</title>
+  <style>
+    body { font-family: -apple-system, Arial, sans-serif; background: #0f1420; color: #e4e8f1; margin: 0; padding: 32px; }
+    a.back { color: #7dd3fc; text-decoration: none; }
+    h1 { margin: 16px 0 4px 0; }
+    .task { color: #8b93a7; margin-bottom: 24px; }
+    .summary-grid { display: flex; gap: 16px; margin-bottom: 28px; flex-wrap: wrap; }
+    .stat-card { background: #1a2133; border-radius: 10px; padding: 14px 18px; min-width: 120px; }
+    .stat-card .value { font-size: 22px; font-weight: 700; color: #7dd3fc; }
+    .stat-card .label { color: #8b93a7; font-size: 12px; margin-top: 4px; }
+    table { width: 100%; border-collapse: collapse; background: #1a2133; border-radius: 10px; overflow: hidden; }
+    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #262e45; font-size: 14px; }
+    th { color: #8b93a7; font-weight: 600; font-size: 12px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/">&larr; All runs</a>
+  <h1>{{ summary.run_id }}</h1>
+  <div class="task">{{ summary.task }}</div>
+
+  <div class="summary-grid">
+    <div class="stat-card"><div class="value">{{ summary.exit_status }}</div><div class="label">Exit Status</div></div>
+    <div class="stat-card"><div class="value">{{ summary.total_steps }}</div><div class="label">Steps</div></div>
+    <div class="stat-card"><div class="value">${{ "%.4f"|format(summary.total_cost) }}</div><div class="label">Cost</div></div>
+    <div class="stat-card"><div class="value">{{ summary.total_wall_time_seconds }}s</div><div class="label">Wall Time</div></div>
+    <div class="stat-card"><div class="value">{{ summary.api_calls }}</div><div class="label">API Calls</div></div>
+  </div>
+
+  <table>
+    <tr><th>#</th><th>Time (s)</th><th>Cumulative Cost</th><th>Calls So Far</th><th>Format Errors</th><th>Last Role</th></tr>
+    {% for s in steps %}
+    <tr>
+      <td>{{ s.step_index }}</td>
+      <td>{{ s.elapsed_seconds }}</td>
+      <td>${{ "%.5f"|format(s.cumulative_cost) }}</td>
+      <td>{{ s.n_calls_so_far }}</td>
+      <td>{{ s.consecutive_format_errors }}</td>
+      <td>{{ s.last_role }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>

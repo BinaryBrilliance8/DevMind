@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevMind Dashboard</title>
+  <style>
+    body { font-family: -apple-system, Arial, sans-serif; background: #0f1420; color: #e4e8f1; margin: 0; padding: 32px; }
+    h1 { margin: 0 0 4px 0; }
+    .subtitle { color: #8b93a7; margin-bottom: 28px; }
+    .stats { display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; }
+    .stat-card { background: #1a2133; border-radius: 10px; padding: 16px 20px; min-width: 140px; }
+    .stat-card .value { font-size: 28px; font-weight: 700; color: #7dd3fc; }
+    .stat-card .label { color: #8b93a7; font-size: 13px; margin-top: 4px; }
+    table { width: 100%; border-collapse: collapse; background: #1a2133; border-radius: 10px; overflow: hidden; }
+    th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #262e45; }
+    th { color: #8b93a7; font-weight: 600; font-size: 13px; text-transform: uppercase; }
+    tr:hover { background: #20283d; }
+    a { color: #7dd3fc; text-decoration: none; }
+    .badge { padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+    .badge.resolved { background: #16342a; color: #4ade80; }
+    .badge.unresolved { background: #3a2222; color: #f87171; }
+    .empty { color: #8b93a7; padding: 40px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h1>DevMind Dashboard</h1>
+  <div class="subtitle">LLM-Based Autonomous Agent Framework — run history &amp; evaluation</div>
+
+  <div class="stats">
+    <div class="stat-card"><div class="value">{{ totals.runs }}</div><div class="label">Total Runs</div></div>
+    <div class="stat-card"><div class="value">{{ totals.resolved }}</div><div class="label">Issues Resolved</div></div>
+    <div class="stat-card"><div class="value">${{ totals.total_cost }}</div><div class="label">Total Cost</div></div>
+    <div class="stat-card"><div class="value">{{ totals.avg_steps }}</div><div class="label">Avg Steps / Run</div></div>
+  </div>
+
+  {% if runs %}
+  <table>
+    <tr>
+      <th>Run ID</th><th>Task</th><th>Status</th><th>Steps</th><th>Cost</th><th>Time (s)</th>
+    </tr>
+    {% for r in runs %}
+    <tr>
+      <td><a href="/run/{{ r.run_id }}">{{ r.run_id }}</a></td>
+      <td>{{ r.task[:60] }}{% if r.task|length > 60 %}…{% endif %}</td>
+      <td>
+        {% if r.resolved %}<span class="badge resolved">Resolved</span>
+        {% else %}<span class="badge unresolved">{{ r.exit_status or "Unresolved" }}</span>{% endif %}
+      </td>
+      <td>{{ r.total_steps }}</td>
+      <td>${{ "%.4f"|format(r.total_cost) }}</td>
+      <td>{{ r.total_wall_time_seconds }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <div class="empty">No runs yet. Run: <code>python -m devmind.run --repo &lt;path&gt; --task "..."</code></div>
+  {% endif %}
+</body>
+</html>

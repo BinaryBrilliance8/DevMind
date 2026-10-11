@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+.env
+logs/*.json
+!logs/.gitkeep
+.DS_Store
+.venv/
+.pytest_cache/

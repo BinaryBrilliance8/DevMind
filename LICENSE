@@ -1,0 +1,15 @@
+MIT License
+
+This project (DevMind) is built on top of mini-swe-agent
+(https://github.com/SWE-agent/mini-swe-agent), which is MIT-licensed.
+The additions in this repository (devmind/, dashboard/, scripts/) are
+also released under the MIT License.
+
+Copyright (c) 2026 DevMind project team (Batch 3, Dept. of IT, KITS Warangal)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files, to deal in the Software
+without restriction, including without limitation the rights to use, copy,
+modify, merge, publish, distribute, sublicense, and/or sell copies of the
+Software, subject to the original mini-swe-agent license terms being
+preserved for the unmodified portions.
