@@ -1,0 +1,19 @@
+{
+  "source_pdf_sha256": "a6aa589e786320420e8b8adb81e3c07c09e422c9880bde14f41c80576138bc05",
+  "pre_revision_sources": {
+    "server/devmind/__init__.py": "fbeece2769dde1cad8c9318947d91adf58e2942de52e2216112c8b17e472f350",
+    "server/devmind/api.py": "1f3f7b6c405fe286c97844489a0e5443716fc6c5e796ba8a910224161c84b1ea",
+    "server/devmind/config.py": "632238a463137d26404f9d7e74c22c5cacd65f2121c89788c08da89915c7babf",
+    "server/devmind/contracts.py": "f46042242f295da2536343869b9b6170b12a50075e2c33129a477ee80685a2a3",
+    "server/devmind/database.py": "ed81a7b4682d20f6ad3ed347f8c33d40cf4bcbc70319d69e90c27aa5bd057a8b",
+    "server/devmind/evaluation.py": "dd7a0e7693d1bc6a638fc3d10338be706ac141a77165f1f98e21b5ac91803569",
+    "server/devmind/executor.py": "5a7c8779ba1a921618b4036915fb1390601acf184052aa75f5c863d293fdf5c3",
+    "server/devmind/isolation.py": "31a35d6765de8ae9849848488f873088dcdf7794794e063027ba82f4c17abe3a",
+    "server/devmind/main.py": "1260144490e8496275a5a59f2c2409bcf2d7c86c8519172d206de735a4ef179a",
+    "server/devmind/model.py": "05f24f47b096b4e70fd2cb120400b9dba6d3dba50c0bbaf3ad686350c6e062e7",
+    "server/devmind/operations.py": "fb2f7eee85ce9f71756989d6351af3fcd5fbe8e83b53c2f293a3d98bef9818ad",
+    "server/devmind/readiness.py": "19070710c1f9ba4232327776ab2e8051de06de812e7ee7a926754277a2682ba7",
+    "server/devmind/research.py": "d96391555b341d42bf6f7cf1f2abdfa3ab415acb7a6a5dc6b668ee5cf068a231",
+    "server/devmind/runner.py": "36d05a612b296f3e272914c6e3a1b31d61a9e627942f5d2412331270a3426d23"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "seed": 20261119,
+  "count": 20000,
+  "tokens": [
+    "a",
+    "file.py",
+    "..",
+    ".",
+    "/",
+    "\\",
+    "\u0000",
+    ".git",
+    ".GIT",
+    ".Git",
+    "\u00e9",
+    " ",
+    "-",
+    "_",
+    "tests",
+    "config",
+    "0",
+    "x",
+    "//",
+    ""
+  ],
+  "corpus_sha256": "6f03b1922a699d26f4b0990ac48c43657f1add8f9c713efdb70cfac5921ef8f7",
+  "scope": "New deterministic corpus; do not compare counts with v2 as identical inputs",
+  "before": {
+    "accepted": 8058,
+    "false_accepts": 151,
+    "false_rejects": 0,
+    "disagreement_values": [
+      "."
+    ]
+  },
+  "after": {
+    "accepted": 7907,
+    "false_accepts": 0,
+    "false_rejects": 0,
+    "disagreement_values": []
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": "Qwen2.5-Coder-1.5B-Instruct Q4_K_M",
+  "revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+  "runtime": "llama.cpp b12532 CPU",
+  "prompt": "aci-v2",
+  "action": {
+    "kind": "plan",
+    "steps": [
+      "Locate the relevant code in the repository.",
+      "Read the code to understand the issue.",
+      "Run the verification command with the provided arguments to ensure the issue is correctly identified.",
+      "If the issue is identified, proceed to replace the text in the code.",
+      "Run the verification command again to ensure the text has been replaced correctly.",
+      "Submit the patch and tests to the repository."
+    ]
+  },
+  "tokens": 1179,
+  "seconds": 1.512,
+  "scope": "Live inference and first-action schema only; no repository execution"
+}

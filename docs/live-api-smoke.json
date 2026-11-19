@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-19",
+  "transport": "Actual HTTP to Uvicorn process",
+  "readiness": true,
+  "submitted": true,
+  "worker_ran": true,
+  "status": "failed",
+  "reason": "Docker is not installed; repository execution is disabled",
+  "host_execution_fallback": false,
+  "scope": "Dependency failure validation, not successful autonomous repair"
+}

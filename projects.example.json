@@ -1,0 +1,10 @@
+[
+  {
+    "key": "cache-reference",
+    "name": "TTL cache · integration reference",
+    "checkout": "examples/cache_repo",
+    "image": "devmind-executor:1",
+    "verify": ["python", "-m", "unittest", "discover", "-s", "tests", "-v"],
+    "protected": ["tests"]
+  }
+]

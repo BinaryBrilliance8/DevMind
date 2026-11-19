@@ -1,0 +1,34 @@
+{
+  "scope": "First-action compliance only; no execution, patches, repairs or benchmark score",
+  "model": "devmind-qwen-coder",
+  "endpoint": "http://127.0.0.1:18001/v1",
+  "temperature": 0,
+  "max_tokens": 3000,
+  "tasks": 12,
+  "calls": 24,
+  "order": "alternating paired variants",
+  "limitations": "One model, one response per task/variant, correlated paraphrases; no population inference",
+  "python": "3.14.3 (v3.14.3:323c59a5e34, Feb  3 2026, 11:41:37) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "platform": "macOS-26.4-arm64-arm-64bit-Mach-O",
+  "summary": {
+    "aci-v1": {
+      "requests": 12,
+      "schema_valid": 12,
+      "first_plan": 0,
+      "plan_gate_refusal": 12,
+      "transport_failures": 0,
+      "mean_seconds": 0.5348961980000695,
+      "total_tokens": 12514
+    },
+    "aci-v2": {
+      "requests": 12,
+      "schema_valid": 12,
+      "first_plan": 12,
+      "plan_gate_refusal": 0,
+      "transport_failures": 0,
+      "mean_seconds": 1.3511887359999644,
+      "total_tokens": 14083
+    }
+  },
+  "response_sha256": "c2d2e59cb91e710632ca04c7181a925478fe7519312a04125f6122d9f8b77eae"
+}

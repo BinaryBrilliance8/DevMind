@@ -1,0 +1,10 @@
+FROM python:3.12-slim
+RUN apt-get update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
+COPY server/devmind/__init__.py /opt/devmind/__init__.py
+COPY server/devmind/operations.py /opt/devmind/operations.py
+COPY server/devmind/executor.py /opt/devmind/executor.py
+RUN printf 'import sys\nsys.path.insert(0, "/opt")\nfrom devmind.executor import main\nmain()\n' > /opt/computer.py && chmod -R a-w /opt
+USER 65532:65532
+WORKDIR /workspace
+ENV PYTHONDONTWRITEBYTECODE=1
+CMD ["sleep", "3600"]

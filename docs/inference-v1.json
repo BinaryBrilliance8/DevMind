@@ -1,0 +1,12 @@
+{
+  "model": "Qwen2.5-Coder-1.5B-Instruct Q4_K_M",
+  "revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+  "runtime": "llama.cpp b12532 CPU",
+  "action": {
+    "kind": "submit",
+    "summary": "Update expiration policy to ensure items expire at the exact TTL boundary, including zero TTL."
+  },
+  "tokens": 1054,
+  "seconds": 3.434,
+  "scope": "Live inference and ACI schema only; no repository execution"
+}

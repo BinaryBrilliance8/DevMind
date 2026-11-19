@@ -1,0 +1,7 @@
+# Optional training environment: resolve and lock against the selected GPU/checkpoint.
+# This training environment was not installed or executed in the local validation.
+torch>=2.5
+transformers>=4.49
+peft>=0.14
+accelerate>=1.2
+bitsandbytes>=0.45; platform_system == "Linux"

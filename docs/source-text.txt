@@ -1,0 +1,41 @@
+ 
+U18IT707-MAJOR PROJECT(PHASE-1) 
+Semester : VII semester 
+Name of the Student : 
+SYED QADEER AHMED, VILASAGARAPU SHIVA 
+CHARAN, DESHINI JAYANTH GOUD, RAJARAPU 
+HEMANTH DURGA PRASAD 
+Roll Number : B23IT009, B23IT064, B23IT015, B21IT006 
+Major Project Title : DevMind: An LLM-Based Autonomous Agent Framework for Automated Software Engineering 
+Domain Name : Artificial Intelligence / Agentic Software Engineering 
+Abstract 
+As software systems scale, resolving repository -level bugs and feature requests manually 
+has become a major bottleneck in the development lifecycle. To address the limitations of 
+single-shot code generation and purely human -driven debugging, we introduce 
+DevMind, a Large Language Model (LLM) -based autonomous software engineering 
+framework built upon a structured Agent -Computer Interface (ACI). This framework 
+provides a robust, sandboxed environment engineered to autonomously plan, execute, 
+and verify multi -step coding tasks, including issue localization, patch generation, 
+automated testing, and iterative self -correction. By offering controlled tool access to a 
+shell, code editor, and version control system, along with execution -grounded feedback 
+loops and st andardized benchmarking on SWE -bench, DevMind enables researchers to 
+efficiently train, evaluate, and compare autonomous coding agents on real -world GitHub 
+issues. Ultimately, this framework accelerates the development of reliable, human-aligned 
+autonomous software engineers capable of end -to-end issue resolution in complex, 
+production-scale codebases. 
+ 
+Recommended  / Not Recommended (NR) 
+If NR, Remarks __________________________________________________________________ 
+ 
+ 
+Major Project Supervisor Major Project Coordinator Head of the Department 
+Sri. A. Bhaskar 
+Associate Professor 
+Dept. of IT 
+Dr. K. Deepika 
+Assistant Professor 
+Dept. of IT 
+Dr.T.Senthil Murugan 
+Prof. & Head, 
+Dept. of IT 
+ 

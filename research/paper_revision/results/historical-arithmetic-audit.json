@@ -1,0 +1,35 @@
+{
+  "scope": "Arithmetic consistency of printed v2 values only; not raw-data reproduction",
+  "scripted_total": {
+    "computed": 96,
+    "reported": 96
+  },
+  "protected_outcomes": {
+    "computed": 48,
+    "reported": 48
+  },
+  "unprotected_outcomes": {
+    "computed": 48,
+    "reported": 48
+  },
+  "path_oracle_accepted": {
+    "computed": 5671,
+    "reported": 5671
+  },
+  "path_oracle_rejected": {
+    "computed": 14329,
+    "reported": 14329
+  },
+  "schema_invalid": {
+    "computed": 4855,
+    "reported": 4855
+  },
+  "schema_total": {
+    "computed": 5000,
+    "reported": 5000
+  },
+  "random_reviews": {
+    "computed": 14,
+    "reported": 14
+  }
+}

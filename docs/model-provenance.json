@@ -1,0 +1,7 @@
+{
+  "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+  "model_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+  "runtime_source": "https://github.com/ggml-org/llama.cpp/releases/tag/b12532",
+  "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+  "runtime_archive_sha256": "e3162c7d47e796435bcdef4ca348c56f4a315eebefc90109ca15d40e1d136ca8"
+}

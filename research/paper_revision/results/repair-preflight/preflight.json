@@ -1,0 +1,27 @@
+{
+  "ready": false,
+  "checks": {
+    "database": {
+      "ready": true
+    },
+    "console": {
+      "ready": true
+    },
+    "projects": {
+      "ready": true
+    },
+    "repository:cache-reference": {
+      "ready": true
+    },
+    "docker": {
+      "ready": false
+    },
+    "image:devmind-executor:1": {
+      "ready": false
+    },
+    "model": {
+      "ready": true,
+      "note": "Catalog reachability only; run a completion to verify inference"
+    }
+  }
+}

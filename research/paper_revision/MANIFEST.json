@@ -1,0 +1,52 @@
+{
+  "revision_date": "2026-11-19",
+  "historical_results_reproduced": false,
+  "live_repair_verified": false,
+  "files": {
+    "README.md": "f0bdf9cab83bb4243fc9667c406232efb5652a6e93f71ebd101445fcc10a60bf",
+    "baseline-provenance.json": "7896964bbc28215573f9d626a1f12c7eec7d82603c24555ca35db60ea1365443",
+    "build_paper.py": "4393420942b45d860f26ab6efccea88f4202ad922f9bfd56ecbf6db4cf815766",
+    "live_actions.py": "a7f08718f237976ccf8b6b85385c990c2e523f58ae5e7ed01c0ca4f869f72e51",
+    "live_repair.py": "f19e7332214eb927709c9cd4a7fcda8d940f1be6784d2d742ad1b0bccaa81890",
+    "path_study.py": "5100c65c61e3f650e705f7f1c6b65a9136b7b0ec4c7dddc58f654b08a9e4c022",
+    "requirements-paper.txt": "b31a9e0731f6478efd5dc69307f2ee087fea9bff5798311d890c7503e177c478",
+    "results/docker-attempt.log": "191071139e1344575dcd940163b79a1b04986bb0ef5ae42ded44659bd40c3b80",
+    "results/historical-arithmetic-audit.json": "f80a8e9fff8760f6db43bd68052ed1e95a8f4ca3cc11bac1f1e2d4b5e889ad0b",
+    "results/live/responses.jsonl": "c2d2e59cb91e710632ca04c7181a925478fe7519312a04125f6122d9f8b77eae",
+    "results/live/summary.json": "16e7902fc03da0cdc52e12b3f13649d2fcbb78eb1e81b0325878df4a53409d57",
+    "results/paths/corpus.jsonl": "6f03b1922a699d26f4b0990ac48c43657f1add8f9c713efdb70cfac5921ef8f7",
+    "results/paths/summary.json": "4b020ff07c34dc0e342be04a609ca8d0700549f281cf21a328d468ce02edcfc9",
+    "results/postgres-attempt.log": "07f7a1ef7df6dd2ecddfc96e7e630f44113305fef1148506fce769890b1c69bd",
+    "results/repair-preflight/preflight.json": "d3b650d6dd3d3beb58e92c7151646e75bed36b8bc35e5579683d6807aa070919",
+    "source-paper-v2.pdf": "a6aa589e786320420e8b8adb81e3c07c09e422c9880bde14f41c80576138bc05",
+    "tasks.example.jsonl": "11264dd6bab9dfe2f3bbdeec7cc5af40509e4ee38fcb5de07d1e0c306040ec6d"
+  },
+  "production_sources": {
+    "server/devmind/__init__.py": "fbeece2769dde1cad8c9318947d91adf58e2942de52e2216112c8b17e472f350",
+    "server/devmind/api.py": "1f3f7b6c405fe286c97844489a0e5443716fc6c5e796ba8a910224161c84b1ea",
+    "server/devmind/config.py": "632238a463137d26404f9d7e74c22c5cacd65f2121c89788c08da89915c7babf",
+    "server/devmind/contracts.py": "f46042242f295da2536343869b9b6170b12a50075e2c33129a477ee80685a2a3",
+    "server/devmind/database.py": "ed81a7b4682d20f6ad3ed347f8c33d40cf4bcbc70319d69e90c27aa5bd057a8b",
+    "server/devmind/evaluation.py": "dd7a0e7693d1bc6a638fc3d10338be706ac141a77165f1f98e21b5ac91803569",
+    "server/devmind/executor.py": "5a7c8779ba1a921618b4036915fb1390601acf184052aa75f5c863d293fdf5c3",
+    "server/devmind/isolation.py": "31a35d6765de8ae9849848488f873088dcdf7794794e063027ba82f4c17abe3a",
+    "server/devmind/main.py": "1260144490e8496275a5a59f2c2409bcf2d7c86c8519172d206de735a4ef179a",
+    "server/devmind/model.py": "cb36a8bb8fe550157c7a067a4c48e756faaf48fc781313d4a26cdfa79a92419c",
+    "server/devmind/operations.py": "9198bf64b577050c22f490b172bbb4d8a2b0aad9a6a756c2028c63772d51b950",
+    "server/devmind/readiness.py": "19070710c1f9ba4232327776ab2e8051de06de812e7ee7a926754277a2682ba7",
+    "server/devmind/research.py": "d96391555b341d42bf6f7cf1f2abdfa3ab415acb7a6a5dc6b668ee5cf068a231",
+    "server/devmind/runner.py": "36d05a612b296f3e272914c6e3a1b31d61a9e627942f5d2412331270a3426d23"
+  },
+  "tests": {
+    "passed": 47,
+    "skipped": 3,
+    "junit_sha256": "7ddbed60013c77a7e95c7927f678bc35ae89392eb7656dea748f0da3da4273c6"
+  },
+  "model_provenance": {
+    "model_revision": "f86cb2c1fa58255f8052cc32aeede1b7482d4361",
+    "model_source": "https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct-GGUF",
+    "runtime_source": "https://github.com/ggml-org/llama.cpp/releases/tag/b12532",
+    "model_sha256": "cc324af070c2ecbfd324a30884d2f951a7ff756aba85cb811a6ec436933bb046",
+    "runtime_archive_sha256": "e3162c7d47e796435bcdef4ca348c56f4a315eebefc90109ca15d40e1d136ca8"
+  }
+}

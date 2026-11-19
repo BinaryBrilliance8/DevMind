@@ -1,0 +1,19 @@
+[Unit]
+Description=DevMind research control plane
+After=network-online.target
+
+[Service]
+User=devmind-api
+WorkingDirectory=/opt/devmind
+EnvironmentFile=/etc/devmind/api.env
+ExecStart=/opt/devmind/.venv/bin/devmind serve --host 127.0.0.1 --port 8090
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

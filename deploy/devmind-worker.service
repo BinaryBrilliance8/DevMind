@@ -1,0 +1,22 @@
+[Unit]
+Description=DevMind isolated execution worker
+After=network-online.target docker.service
+Requires=docker.service
+
+[Service]
+User=devmind-worker
+SupplementaryGroups=docker
+WorkingDirectory=/opt/devmind
+EnvironmentFile=/etc/devmind/worker.env
+ExecStart=/opt/devmind/.venv/bin/devmind worker
+Restart=on-failure
+RestartSec=5
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+TimeoutStopSec=180
+
+[Install]
+WantedBy=multi-user.target
