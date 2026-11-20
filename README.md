@@ -194,8 +194,15 @@ result boundaries are described in `docs/RESEARCH.md`.
 
 ### Research-paper v3 revision
 
-The latest paper is `docs/DevMind_Research_Paper_NewBuild_v3.pdf`. New scripts, raw
+The earlier v3 paper is `docs/DevMind_Research_Paper_NewBuild_v3.pdf`. New scripts, raw
 live responses, path-fuzz inputs and infrastructure failure logs are under
 `research/paper_revision/`. Read `docs/PAPER_REVISION.md` before citing results:
 the supplied v2 historical experiments could not be reproduced from their missing
 artifacts. New measurements and historical claims are explicitly separated.
+
+### Camera-ready paper — 20 November 2026
+
+[Read the updated paper](docs/DevMind_Research_Paper_CameraReady.pdf), preserved exactly as supplied.
+[Repository and artifact verification](docs/CAMERA_READY_AUDIT.md) identifies this fresh
+implementation and records the missing evaluation scripts behind several new paper results.
+Those results are not presented as independently reproduced by this release.
